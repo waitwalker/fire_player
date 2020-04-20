@@ -36,7 +36,7 @@
                                             <constraint firstAttribute="height" constant="128" id="4nK-wb-Gpc"/>
                                             <constraint firstAttribute="width" constant="128" id="K3l-NQ-LZX"/>
                                         </constraints>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="4nP-f6-lw9"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="home_icon" id="4nP-f6-lw9"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esT-JQ-j7u">
                                         <rect key="frame" x="55" y="147" width="37" height="16"/>
@@ -79,4 +79,7 @@
             <point key="canvasLocation" x="139" y="147"/>
         </window>
     </objects>
+    <resources>
+        <image name="home_icon" width="128" height="128"/>
+    </resources>
 </document>
