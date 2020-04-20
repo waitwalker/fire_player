@@ -1,0 +1,6 @@
+framework module Pods_FirePlayer {
+  umbrella header "Pods-FirePlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
