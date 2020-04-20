@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		1F9B488AB272D54EF14E4DDF /* Pods_FirePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7238080E97AB036BD8A54BF3 /* Pods_FirePlayer.framework */; };
 		BFFF85F7244D32E400656375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF85F6244D32E400656375 /* AppDelegate.swift */; };
-		BFFF85F9244D32E400656375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF85F8244D32E400656375 /* ViewController.swift */; };
 		BFFF85FB244D32E500656375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFF85FA244D32E500656375 /* Assets.xcassets */; };
-		BFFF8607244D375300656375 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8606244D375300656375 /* MainMenu.xib */; };
-		BFFF860B244D387D00656375 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF8609244D387D00656375 /* MainWindowController.swift */; };
-		BFFF860C244D387D00656375 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF860A244D387D00656375 /* MainWindowController.xib */; };
 		BFFF8611244D38A600656375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF860F244D38A600656375 /* MainViewController.swift */; };
-		BFFF8612244D38A600656375 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8610244D38A600656375 /* MainViewController.xib */; };
+		BFFF8619244D3E6100656375 /* InitialWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF8617244D3E6100656375 /* InitialWindowController.swift */; };
+		BFFF861A244D3E6100656375 /* InitialWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8618244D3E6100656375 /* InitialWindowController.xib */; };
+		BFFF861B244D465B00656375 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF861D244D465B00656375 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,15 +22,13 @@
 		8E82878755DBC8213F2FF73B /* Pods-FirePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePlayer.debug.xcconfig"; path = "Target Support Files/Pods-FirePlayer/Pods-FirePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		BFFF85F3244D32E400656375 /* FirePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFF85F6244D32E400656375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFFF85F8244D32E400656375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFFF85FA244D32E500656375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFF85FF244D32E500656375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFFF8600244D32E500656375 /* FirePlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirePlayer.entitlements; sourceTree = "<group>"; };
-		BFFF8606244D375300656375 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		BFFF8609244D387D00656375 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		BFFF860A244D387D00656375 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		BFFF860F244D38A600656375 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		BFFF8610244D38A600656375 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BFFF8617244D3E6100656375 /* InitialWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialWindowController.swift; sourceTree = "<group>"; };
+		BFFF8618244D3E6100656375 /* InitialWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialWindowController.xib; sourceTree = "<group>"; };
+		BFFF861C244D465B00656375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +83,10 @@
 			children = (
 				BFFF8608244D384D00656375 /* Main */,
 				BFFF85F6244D32E400656375 /* AppDelegate.swift */,
-				BFFF85F8244D32E400656375 /* ViewController.swift */,
 				BFFF85FA244D32E500656375 /* Assets.xcassets */,
 				BFFF85FF244D32E500656375 /* Info.plist */,
 				BFFF8600244D32E500656375 /* FirePlayer.entitlements */,
-				BFFF8606244D375300656375 /* MainMenu.xib */,
+				BFFF861D244D465B00656375 /* MainMenu.xib */,
 			);
 			path = FirePlayer;
 			sourceTree = "<group>";
@@ -99,10 +94,9 @@
 		BFFF8608244D384D00656375 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BFFF8609244D387D00656375 /* MainWindowController.swift */,
-				BFFF860A244D387D00656375 /* MainWindowController.xib */,
 				BFFF860F244D38A600656375 /* MainViewController.swift */,
-				BFFF8610244D38A600656375 /* MainViewController.xib */,
+				BFFF8617244D3E6100656375 /* InitialWindowController.swift */,
+				BFFF8618244D3E6100656375 /* InitialWindowController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -168,9 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFF85FB244D32E500656375 /* Assets.xcassets in Resources */,
-				BFFF860C244D387D00656375 /* MainWindowController.xib in Resources */,
-				BFFF8607244D375300656375 /* MainMenu.xib in Resources */,
-				BFFF8612244D38A600656375 /* MainViewController.xib in Resources */,
+				BFFF861B244D465B00656375 /* MainMenu.xib in Resources */,
+				BFFF861A244D3E6100656375 /* InitialWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +216,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFF85F9244D32E400656375 /* ViewController.swift in Sources */,
 				BFFF85F7244D32E400656375 /* AppDelegate.swift in Sources */,
-				BFFF860B244D387D00656375 /* MainWindowController.swift in Sources */,
+				BFFF8619244D3E6100656375 /* InitialWindowController.swift in Sources */,
 				BFFF8611244D38A600656375 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFFF861D244D465B00656375 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFF861C244D465B00656375 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BFFF8601244D32E500656375 /* Debug */ = {

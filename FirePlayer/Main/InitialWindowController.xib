@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InitialWindowController" customModule="FirePlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="600" height="370"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO" customClass="InitialWindowContentView" customModule="FirePlayer" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="5j1-NN-MWd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
+                        <subviews>
+                            <visualEffectView blendingMode="behindWindow" material="underPageBackground" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-zK-Sl4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
+                            </visualEffectView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="eEL-MJ-Q3Q">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
+                                <subviews>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0p-bs-y2H">
+                                        <rect key="frame" x="30" y="212" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="4nK-wb-Gpc"/>
+                                            <constraint firstAttribute="width" constant="128" id="K3l-NQ-LZX"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="4nP-f6-lw9"/>
+                                    </imageView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esT-JQ-j7u">
+                                        <rect key="frame" x="55" y="147" width="37" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="XG5-dg-EBu">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="R0p-bs-y2H" firstAttribute="leading" secondItem="eEL-MJ-Q3Q" secondAttribute="leading" constant="30" id="Wmr-Dt-DXc"/>
+                                    <constraint firstItem="R0p-bs-y2H" firstAttribute="top" secondItem="eEL-MJ-Q3Q" secondAttribute="top" constant="30" id="gg0-Wt-PfF"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="moJ-zK-Sl4" secondAttribute="bottom" id="EW5-OT-KYV"/>
+                            <constraint firstItem="eEL-MJ-Q3Q" firstAttribute="leading" secondItem="5j1-NN-MWd" secondAttribute="leading" id="HNm-eo-jUN"/>
+                            <constraint firstAttribute="trailing" secondItem="moJ-zK-Sl4" secondAttribute="trailing" id="TaD-us-NOz"/>
+                            <constraint firstItem="moJ-zK-Sl4" firstAttribute="top" secondItem="5j1-NN-MWd" secondAttribute="top" id="Xrw-Rd-Qfi"/>
+                            <constraint firstAttribute="bottom" secondItem="eEL-MJ-Q3Q" secondAttribute="bottom" id="cSM-Sc-lFI"/>
+                            <constraint firstAttribute="trailing" secondItem="eEL-MJ-Q3Q" secondAttribute="trailing" id="og0-Sh-18x"/>
+                            <constraint firstItem="eEL-MJ-Q3Q" firstAttribute="top" secondItem="5j1-NN-MWd" secondAttribute="top" id="rl9-oT-w6B"/>
+                            <constraint firstItem="moJ-zK-Sl4" firstAttribute="leading" secondItem="5j1-NN-MWd" secondAttribute="leading" id="ukT-FR-GeP"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5j1-NN-MWd" secondAttribute="bottom" id="2Pw-wR-2OX"/>
+                    <constraint firstItem="5j1-NN-MWd" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="ZyL-SE-C1A"/>
+                    <constraint firstItem="5j1-NN-MWd" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="fD1-tn-cKG"/>
+                    <constraint firstAttribute="trailing" secondItem="5j1-NN-MWd" secondAttribute="trailing" id="tI9-W7-EIL"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="147"/>
+        </window>
+    </objects>
+</document>
