@@ -7,5 +7,6 @@ target 'FirePlayer' do
 
   # Pods for FirePlayer	
   pod 'Kingfisher', '~> 5.13.2'
+  pod 'SnapKit', '~> 5.0.1'
 
 end
