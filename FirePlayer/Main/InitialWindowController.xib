@@ -27,6 +27,14 @@
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="5j1-NN-MWd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
                         <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13z-je-8NB">
+                                <rect key="frame" x="218" y="137" width="163" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Os0-QH-Tem">
+                                <rect key="frame" x="218" y="137" width="163" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
                             <visualEffectView blendingMode="behindWindow" material="underPageBackground" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-zK-Sl4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
                             </visualEffectView>
