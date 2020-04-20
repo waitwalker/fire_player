@@ -26,5 +26,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let window = InitialWindowController()
         window.showWindow(self)
     }
+    
+    /// 通过file 打开
+    /// - Parameter sender: menu item
+    @IBAction func openFile(_ sender: Any) {
+        let panel = NSOpenPanel()
+        panel.title = "打开"
+        panel.canCreateDirectories = false
+        panel.canChooseFiles = true
+        panel.canChooseDirectories = true
+        panel.allowsMultipleSelection = true
+        if panel.runModal() == .OK {
+            
+        }
+    }
+    
+    @IBAction func openURL(_ sender: Any) {
+        
+        let openURLWindow = OpenURLWindowController()
+        openURLWindow.showWindow(nil)
+    }
 }
 

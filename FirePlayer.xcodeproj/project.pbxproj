@@ -12,9 +12,11 @@
 		BFFF85FB244D32E500656375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFF85FA244D32E500656375 /* Assets.xcassets */; };
 		BFFF8611244D38A600656375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF860F244D38A600656375 /* MainViewController.swift */; };
 		BFFF8619244D3E6100656375 /* InitialWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF8617244D3E6100656375 /* InitialWindowController.swift */; };
-		BFFF861A244D3E6100656375 /* InitialWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8618244D3E6100656375 /* InitialWindowController.xib */; };
 		BFFF861B244D465B00656375 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF861D244D465B00656375 /* MainMenu.xib */; };
 		BFFF8620244D677F00656375 /* ExtensionColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF861F244D677F00656375 /* ExtensionColors.swift */; };
+		BFFF8621244D7F5200656375 /* InitialWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8623244D7F5200656375 /* InitialWindowController.xib */; };
+		BFFF8627244D854000656375 /* OpenURLWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF8625244D854000656375 /* OpenURLWindowController.swift */; };
+		BFFF8628244D854000656375 /* OpenURLWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFF8626244D854000656375 /* OpenURLWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +30,11 @@
 		BFFF8600244D32E500656375 /* FirePlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirePlayer.entitlements; sourceTree = "<group>"; };
 		BFFF860F244D38A600656375 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BFFF8617244D3E6100656375 /* InitialWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialWindowController.swift; sourceTree = "<group>"; };
-		BFFF8618244D3E6100656375 /* InitialWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialWindowController.xib; sourceTree = "<group>"; };
 		BFFF861C244D465B00656375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BFFF861F244D677F00656375 /* ExtensionColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColors.swift; sourceTree = "<group>"; };
+		BFFF8622244D7F5200656375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InitialWindowController.xib; sourceTree = "<group>"; };
+		BFFF8625244D854000656375 /* OpenURLWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLWindowController.swift; sourceTree = "<group>"; };
+		BFFF8626244D854000656375 /* OpenURLWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenURLWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		BFFF85F5244D32E400656375 /* FirePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				BFFF8624244D852900656375 /* Windows */,
 				BFFF861E244D676100656375 /* Const */,
 				BFFF8608244D384D00656375 /* Main */,
 				BFFF85F6244D32E400656375 /* AppDelegate.swift */,
@@ -99,7 +104,7 @@
 			children = (
 				BFFF860F244D38A600656375 /* MainViewController.swift */,
 				BFFF8617244D3E6100656375 /* InitialWindowController.swift */,
-				BFFF8618244D3E6100656375 /* InitialWindowController.xib */,
+				BFFF8623244D7F5200656375 /* InitialWindowController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -110,6 +115,15 @@
 				BFFF861F244D677F00656375 /* ExtensionColors.swift */,
 			);
 			path = Const;
+			sourceTree = "<group>";
+		};
+		BFFF8624244D852900656375 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				BFFF8625244D854000656375 /* OpenURLWindowController.swift */,
+				BFFF8626244D854000656375 /* OpenURLWindowController.xib */,
+			);
+			path = Windows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFF85FB244D32E500656375 /* Assets.xcassets in Resources */,
+				BFFF8628244D854000656375 /* OpenURLWindowController.xib in Resources */,
 				BFFF861B244D465B00656375 /* MainMenu.xib in Resources */,
-				BFFF861A244D3E6100656375 /* InitialWindowController.xib in Resources */,
+				BFFF8621244D7F5200656375 /* InitialWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFF8627244D854000656375 /* OpenURLWindowController.swift in Sources */,
 				BFFF85F7244D32E400656375 /* AppDelegate.swift in Sources */,
 				BFFF8619244D3E6100656375 /* InitialWindowController.swift in Sources */,
 				BFFF8611244D38A600656375 /* MainViewController.swift in Sources */,
@@ -243,6 +259,14 @@
 				BFFF861C244D465B00656375 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BFFF8623244D7F5200656375 /* InitialWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFF8622244D7F5200656375 /* Base */,
+			);
+			name = InitialWindowController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
